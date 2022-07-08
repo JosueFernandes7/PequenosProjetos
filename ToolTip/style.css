@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.main {
+  width: 150px;
+  height: 150px;
+  background: red;
+  border-radius: 20px;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 200;
+  width: 100px;
+  height: 40px;
+  background: rgb(72, 65, 65);
+  color: white;
+  text-align: center;
+}
