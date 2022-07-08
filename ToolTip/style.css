@@ -11,9 +11,6 @@ body {
   background: red;
   border-radius: 20px;
 }
-div {
- 
-}
 .tooltip {
   position: absolute;
   z-index: 200;
