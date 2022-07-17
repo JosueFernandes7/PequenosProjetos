@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  align-items: center;
+}
+#rgb {
+  border: 1px dotted black;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 100px auto;
+  justify-content: center;
+  text-align: right;
+  gap: 20px;
+}
+input[type='range']{
+      overflow: hidden;
+      width: 120px;
+      padding: 2px;
+      -webkit-appearance: none;
+
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    #red {
+      background: rgb(125,0,0);
+    }
+    #green {
+      background: rgb(0,125,0);
+    }
+    #blue {
+      background: rgb(0,0,125);
+    }
+    input[type='range']::-webkit-slider-thumb {
+      width: 12px;
+      -webkit-appearance: none;
+      height: 12px;
+      background: #ffffff;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+#btn {
+  grid-column: 1/-1;
+  background-color: black;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  text-align: center;
+}
+#btn:hover {
+  background-color: rgb(130, 114, 114);
+}
