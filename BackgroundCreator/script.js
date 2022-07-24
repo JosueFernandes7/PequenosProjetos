@@ -1,5 +1,6 @@
-const cores = document.getElementById('rgb')
-cores.addEventListener('change',changeBG)
+const cores = document.getElementById('rgb');
+
+cores.addEventListener('change',changeBG);
 
 function atualizaCor() {
   let cor = {
