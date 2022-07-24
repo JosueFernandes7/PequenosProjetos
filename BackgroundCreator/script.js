@@ -25,4 +25,21 @@ button.addEventListener('click',() => {
   cor = atualizaCor();
   document.body.style.backgroundColor = `rgb(${cor['red']},${cor['green']},${cor['blue']})`
 })
-
+const clipBoard = document.getElementById('clipboard');
+clipBoard.addEventListener('click',getColor);
+function getColor(e) {
+  e.preventDefault();
+  let color = document.body.style.backgroundColor;
+  let clipboardColor = "#";
+  if(color) {
+    color = color.slice(4,18).replaceAll(' ','').replace(')','').split(',');
+    color.map(cor => {
+      clipboardColor += (+cor).toString(16);
+    })
+    navigator.clipboard.writeText(clipboardColor);
+  } else {
+    clipboardColor = '#ffffff';
+    navigator.clipboard.writeText(clipboardColor)
+  }
+  alert(clipboardColor+" COPIADO!!")
+}

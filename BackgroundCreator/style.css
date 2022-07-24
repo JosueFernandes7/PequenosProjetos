@@ -40,7 +40,7 @@ input[type='range']{
       cursor: pointer;
     }
 
-#btn {
+#btn,#clipboard {
   grid-column: 1/-1;
   background-color: black;
   padding: 5px;
@@ -52,4 +52,13 @@ input[type='range']{
 }
 #btn:hover {
   background-color: rgb(130, 114, 114);
+}
+
+#clipboard{
+  grid-column: 1/1;
+  background-color:lightcoral;
+  transition: background-color 0.5s;
+}
+#clipboard:hover {
+  background: rgb(199, 58, 58);
 }
