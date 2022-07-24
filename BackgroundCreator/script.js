@@ -25,6 +25,8 @@ button.addEventListener('click',() => {
   cor = atualizaCor();
   document.body.style.backgroundColor = `rgb(${cor['red']},${cor['green']},${cor['blue']})`
 })
+
+
 const clipBoard = document.getElementById('clipboard');
 clipBoard.addEventListener('click',getColor);
 function getColor(e) {
@@ -34,7 +36,11 @@ function getColor(e) {
   if(color) {
     color = color.slice(4,18).replaceAll(' ','').replace(')','').split(',');
     color.map(cor => {
-      clipboardColor += (+cor).toString(16);
+      if(+cor == 0) {
+        clipboardColor += '00';
+      } else {
+        clipboardColor += (+cor).toString(16);
+      }
     })
     navigator.clipboard.writeText(clipboardColor);
   } else {
