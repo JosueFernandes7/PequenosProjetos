@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #111;
+    color: #fff;
+}
+.container{
+    margin-top: 10px;
+}
+.content{
+    overflow: auto;
+    max-height:600px;
+    margin: 0 auto;
+    background-color: rgba(196, 101, 101, 0.801);
+    padding:10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+.container h1{
+    grid-column: 1 / -1;
+    padding-bottom: 10px;
+}
+input{
+    margin-left: 2px;
+}
+input[type="text"] {
+    padding: 5px 5px;
+}
+
+input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid #6e2424;
+    border-radius: 3px;
+    background-color: white;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: solid rgba(27, 20, 20, 0.801);
+    border-width: 2px 2px 2px 2px;
+    background:rgb(77, 69, 69);
+    transform: rotate(90deg);
+    position: absolute;
+    left: 42%;
+}
+
+#resultado{
+    grid-column: 1 / -1;
+    text-align: left;
+    padding:10px;
+    font-weight: bold;
+    display:grid;
+    grid-template-columns: 1fr;
+
+}
+#resultado p {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    animation: slideRight 0.3s forwards;
+}
+@keyframes slideRight{
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+button {
+    padding: 5px;
+    background: rgb(77, 69, 69);
+    color: rgb(241, 241, 241);
+    transition: 0.4s ;
+    cursor: pointer;
+}
+button:hover {
+    background: #111;
+    color: #fff;
+}
+@media (max-width:500px) {
+    .content {
+        width: 320px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    input[type="text"] {
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+}

@@ -1,0 +1,18 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(204, 221, 236);
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container h1 {
+    margin-top: 0px;
+}
+input[type="number"] {
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
