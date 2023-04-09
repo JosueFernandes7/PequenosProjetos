@@ -1,0 +1,33 @@
+:root {
+  font-size: 62,5%;
+  --menu-color: #fff;
+  --menu-bg: #0000009d;
+  --first-bg: #5c5454;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: Arial,sans-serif;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
+body{
+  background: var(--first-bg);
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}

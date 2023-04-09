@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background: #f7f7f7;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+}
+/* Imagem e Especificações */
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+/* primeiro elemento */
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+/* LINKS */
+.links {
+  display:flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.linkstyle {
+  background: #ffffff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: #000000;
+  text-transform: uppercase;
+}
+/* Grid */
+.grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  background-color: #F7F7F7;
+}
+/* primeiro elemento */
+.text{
+  background-color: #fff;
+  position: relative;
+  padding: 40px;
+  text-align: right;
+  display:grid;
+  gap: 20px;
+  align-content: center;
+  justify-items: end;
+}
+.detalhe{
+  background-color: #ee2211;
+  width:60px;
+  height: 4px;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+  
+}
+.botao {
+  background-color: #ee2211;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+/* Terceiro elemento */
+.vantagem {
+  font-size: 64px;
+  padding: 40px;
+
+  color: rgba(0, 0, 0, 0.2);
+  
+  text-transform: uppercase;
+  text-align: right;
+  align-self: center;
+}
+/* 4 elemento */
+.especify {
+  padding: 40px;
+  background-color: #fff;;
+  gap: 10px 20px;
+}
+.especify-item {
+  display:grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  
+}
+.especify-item p{
+  grid-column: 2;
+}
+
+/* rodape */
+.rodape {
+  background-color: #fff;
+  padding: 30px;
+  justify-self: start;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}

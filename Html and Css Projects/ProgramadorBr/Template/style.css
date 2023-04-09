@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+#dentro{
+    text-transform: capitalize;
+    font-family: Courier, monospace;
+    font-weight: 200;
+    box-sizing: border-box;
+    height: 200px;
+    width: 400px;
+    background: url(./background.png) no-repeat ;
+    padding: 1px 20px;
+    margin: auto;
+    margin-top: 10%;
+}
+#dentro h1{
+    font-weight: 500;
+}
+#dentro ul li{
+   
+}
+#dentro a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#insta{
+    list-style: url(./Insta.png);
+    float: left;
+    clear: right;
+}
+#tww{
+    float: left;
+    clear: left;
+    list-style: url(./Twitter.png);
+}
+#ytb{
+    float: left;
+    clear: left;
+    list-style: url(./Youtube.png);
+}

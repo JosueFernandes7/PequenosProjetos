@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=IBM+Plex+Serif:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Architects Daughter', cursive;
+}
+.container{
+    background-image: url(../Images/images.jpg);
+    background-size:cover ;
+    overflow: hidden;
+    background-repeat: no-repeat;
+   
+}
+
+header h1{
+    background-color: #3dadad;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+nav ul{
+    background-color: #000000;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+}
+nav ul a{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    transition: background 0.8s;
+}
+nav ul a:hover{
+    background-color: #9b3535;
+}
+nav li:last-child{
+    float: right;
+}
+.content{
+    max-width: 230px;
+    padding:40px;
+    margin: 40px;
+    background-color: #4b434369;
+    border-radius: 40px;
+    float: left;
+
+}
+
+input,select{
+    
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-top: 5px;
+}
+input[type="submit"]{
+    background-color:black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background 0.8s;
+}
+input[type="submit"]:hover{
+    background-color: #b83636;
+}
+

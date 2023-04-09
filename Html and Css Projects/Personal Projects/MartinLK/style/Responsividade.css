@@ -1,0 +1,42 @@
+@media screen and (max-width: 694px){
+
+    .container{
+        background-position: center center;
+
+    }
+    .content{
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 15px;
+    }
+    header h1{
+        font-size: 32px;
+    }
+    input,select{
+        font-size: 15px;
+        padding: 10px;
+        margin-top: 5px;
+    }
+}
+@media  screen and (max-width: 392px) {
+    .container{
+        background-size: cover;
+        background-position: center center;
+    }
+    header h1{
+        font-size: 32px;
+    }
+    nav ul li a{
+        border: 5px solid white;
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    nav ul li:last-child{
+        float: none;
+    }
+    .content{
+        font-size: 18px;
+    }
+}
