@@ -1,0 +1,20 @@
+body {
+
+  background: var(--footer-bg);
+}
+footer {
+  font-family: 'Roboto', sans-serif;
+  padding-block: 50px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.footer-contato {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-contato li {
+  list-style: circle;
+}
+
+

@@ -1,0 +1,15 @@
+@import url(../style.css);
+.main-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 650px) {
+  .main-menu {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .main-menu {
+    grid-template-columns: 1fr;
+  }
+}

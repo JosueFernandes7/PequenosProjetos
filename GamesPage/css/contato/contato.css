@@ -1,0 +1,41 @@
+@import url(../style.css);
+
+.menu-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-block: 30px;
+  gap: 10px;
+}
+.form-model fieldset{
+  padding: 20px;
+  border: none;
+  border-left: 5px solid #8B41EF;
+}
+.form-model legend {
+  font-size: 25px;
+}
+label {
+  display: block;
+  color: #B0B2B3;
+  
+}
+input,
+textarea {
+  width: 80%;
+  background-color: #1B1D20;
+  display: block;
+  border-color: #000;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+input:hover {
+  border-color: #fff;
+}
+legend {
+  color: #fff;
+}
+@media (max-width:650px) {
+  .menu-form {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,29 @@
+@import url('../style.css');
+
+.main-menu div {
+  display: inline-block;
+}
+.carousel {
+  position: relative;
+  animation: slideRight 4s linear;
+}
+.carousel-item{
+  display: none !important;
+}
+.carousel-item.active {
+  display: block !important;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

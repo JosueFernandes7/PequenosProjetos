@@ -1,0 +1,68 @@
+main {
+    background-color: var(--main-bg);
+}
+.main-menu {
+    padding-block:60px ;
+    padding-inline: 30px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    color: #fff;
+    gap: 10px;
+}
+.preco {
+    color: #d8bd23;
+}
+.main-menu img {
+    object-fit: contain;
+    /* width: 100%;
+    height: 100%;
+    display: block; */
+}
+
+.main-menu div {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.main-menu div h1,
+.main-menu div p {
+    margin-bottom: 20px;
+}
+
+.game2 {
+    grid-template-columns: 1fr 320px ;
+}
+.game2 img {
+    grid-column: 2;
+}
+.game2 div {
+    grid-column: 1;
+    grid-row: 1;
+}
+.game2 div h1 {
+    align-self: end;
+}
+.game2 .botao-amarelo {
+    align-self: start;
+}
+@media (max-width: 950px) {
+    .main-menu img {
+        height: 320px;
+        display: inline-block;
+        object-fit: contain;
+
+    }
+    .main-menu {
+        padding-block:30px ;
+        padding-inline: 30px;
+        grid-template-columns: 1fr;
+    }
+    .game2 img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .game2 div {
+        grid-row: 2;
+    }
+}
